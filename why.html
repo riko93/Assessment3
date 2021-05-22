@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('./home-page-background.jpeg');
+        min-height: 100%;
+        opacity: 0.2;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }
+
+    .logo-override{
+        color: black!important;
+        font-size: 100px !important;
+        background-color: transparent!important;
+        font-weight: bold !important;
+    }
+
+    .links{
+        font-size: 50px;
+    }
+
+    .description{
+        overflow-style: wr
+    }
+
+    #wrap {
+        width: 320px;
+        height: 320px;
+        -moz-border-radius: 10px;
+        background: red;
+        position: relative;
+    }
+</style>
+<body>
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+</div>
+<div class="w3-display-middle">
+    <div class="row">
+        <div class="col-sm-6 text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IoCVrkcaH6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="overflow-auto description">
+         Australian food wastage accounts for more than 20 billions AUD per year. This is equivalent to 7.3 million tonnes of edible products that end up in the garbage. Moreover food wastage amount to more than 5% of Australia’s greenhouse gas emissions.
+    Therefore international bodies like the United Nations are pressing Australia to reduce its food wastage by 2030 (Department of Agriculture, Water and the Environment, n.d.).
+    The government has in plan a series of normative to reduce food wastage, however, its effects are not guaranteed.
+    It is for this reason that we decided to create YUM, a mobile application that tries to reduce food wastage in Australia.
+    The main principles that we apply to solve the food wastage problem are through an appealable and convenient way to redistribute excess food at a discounted price while allowing businesses to gain a small profit from it.
+    We can therefore identify two main scopes for our application:
+    • Generate a subscription that can include at least 50% of the total food-related businesses in Australia
+    • Decrease food wastage across the country by about 5% or more
+    </div>
+    <div class="row">
+        <div class="col-sm-6 text-center">
+            <a href="./why.html">
+                <span><i class="bi-question links"></i></span>
+            </a>
+        </div>
+        <div class="col-sm-6 text-center">
+            <a href="./what.html">
+                <span><i class="bi-egg-fried links"></i></span>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 text-center">
+            <a href="./sample.html">
+                <span><i class="bi-cone-striped links"></i></span>
+            </a>
+        </div>
+        <div class="col-sm-6 text-center">
+            <a href="./about.html">
+                <span><i class="bi-cash links"></i></span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

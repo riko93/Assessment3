@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('./home-page-background.jpeg');
+        min-height: 100%;
+        opacity: 0.2;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }
+
+    .logo-override{
+        color: black!important;
+        font-size: 100px !important;
+        background-color: transparent!important;
+        font-weight: bold !important;
+    }
+
+    .links{
+        font-size: 50px;
+    }
+
+    .description{
+        overflow-style: wr
+    }
+
+    #wrap {
+        width: 320px;
+        height: 320px;
+        -moz-border-radius: 10px;
+        background: red;
+        position: relative;
+    }
+
+    .image {
+        display: block;
+        width: 500px;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: black;
+    }
+
+
+    .text {
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+    }
+
+</style>
+
+<body>
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+</div>
+<div class="w3-display-middle">
+    <div class="row">
+        <div class="container">
+            <img src="app.jpg" alt="Trulli" class="image">
+            <div class="overlay">
+                <div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 text-center">
+            <a href="./why.html">
+                <span><i class="bi-question links"></i></span>
+            </a>
+        </div>
+        <div class="col-sm-6 text-center">
+            <a href="./what.html">
+                <span><i class="bi-egg-fried links"></i></span>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 text-center">
+            <a href="./sample.html">
+            <span><i class="bi-cone-striped links"></i></span>
+            </a>
+        </div>
+        <div class="col-sm-6 text-center">
+            <a href="./about.html">
+            <span><i class="bi-cash links"></i></span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
